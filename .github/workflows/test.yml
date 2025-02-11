@@ -20,5 +20,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install pytest  # Ensure pytest is installed
+        pip install pytest httpx  # Ensure both pytest and httpx are installed
+
     - name: Run tests
       run: pytest
